@@ -4,7 +4,7 @@ A Flutter project demonstrating fundamental layout widgets.
 
 ## About This Repository
 
-This repository, located at [https://github.com/Ibtasam-98/flutter_layout.git](https://github.com/Ibtasam-98/flutter_layout.git), serves as a growing collection of basic Flutter layout examples. Currently, it provides clear and concise demonstrations of the following core layout widgets:
+This repository, located at https://github.com/Ibtasam-98/flutter_layout.git, serves as a growing collection of basic Flutter layout examples. Currently, it provides clear and concise demonstrations of the following core layout widgets:
 
 - **Row:** Arranging widgets horizontally.
 - **Column:** Arranging widgets vertically.
@@ -21,7 +21,7 @@ To run these examples:
 1.  Ensure you have Flutter installed on your development machine.
 2.  Clone this repository to your local machine:
     ```bash
-    git clone [https://github.com/Ibtasam-98/flutter_layout.git](https://github.com/Ibtasam-98/flutter_layout.git)
+    git clone https://github.com/Ibtasam-98/flutter_layout.git
     ```
 3.  Navigate to the project directory:
     ```bash
