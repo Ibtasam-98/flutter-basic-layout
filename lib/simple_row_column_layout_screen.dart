@@ -14,12 +14,15 @@ class SimpleRowColumnLayoutScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Container(
-                height: screenHeight,
                 width: 80.0,
-                color: Colors.blue,
+                height: screenHeight,
+                color: Colors.red,
                 child: Center(
-                  child: Text(
-                    "Left",
+                  child: Text("Left",
+                    style: TextStyle(
+                      color:Colors.white,
+                      fontSize: 20.0
+                    ),
                   ),
                 ),
               ),
@@ -28,10 +31,10 @@ class SimpleRowColumnLayoutScreen extends StatelessWidget {
                   Container(
                     height: 80.0,
                     width: 80.0,
-                    color: Colors.red,
+                    color: Colors.green,
                     child: Center(
                       child: Text(
-                        "Middle Top",
+                        "Middle",
                       ),
                     ),
                   ),
@@ -39,26 +42,25 @@ class SimpleRowColumnLayoutScreen extends StatelessWidget {
                   Container(
                     height: 80.0,
                     width: 80.0,
-                    color: Colors.black,
+                    color: Colors.deepPurple,
                     child: Center(
                       child: Text(
-                        "Middle Bottom",
-                        style: TextStyle(
-                          color: Colors.white,
-                        ),
-                        textAlign: TextAlign.center,
+                        "Middle",
                       ),
                     ),
-                  ),
+                  )
                 ],
               ),
               Container(
-                height: screenHeight,
                 width: 80.0,
-                color: Colors.purple,
+                height: screenHeight,
+                color: Colors.orange,
                 child: Center(
-                  child: Text(
-                    "Right",
+                  child: Text("Right",
+                    style: TextStyle(
+                        color:Colors.white,
+                        fontSize: 20.0
+                    ),
                   ),
                 ),
               )

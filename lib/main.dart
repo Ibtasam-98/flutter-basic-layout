@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:layout/simple_row_column_layout_screen.dart';
-import 'package:layout/simple_stack_expanded_layout_screen.dart';
-
-void main(){
-  runApp(const MyApp());
+void main (){
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -13,7 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "Simple Layout",
-      home: SimpleStackExpandedLayoutScreen(),
+      home: SimpleRowColumnLayoutScreen(),
     );
   }
 }
