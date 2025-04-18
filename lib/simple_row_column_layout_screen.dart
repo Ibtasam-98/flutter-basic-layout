@@ -52,7 +52,7 @@ class SimpleRowColumnLayoutScreen extends StatelessWidget {
                 ],
               ),
               Container(
-                width: 80.0,
+                width: 80,
                 height: screenHeight,
                 color: Colors.orange,
                 child: Center(
