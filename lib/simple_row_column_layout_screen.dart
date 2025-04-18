@@ -59,7 +59,7 @@ class SimpleRowColumnLayoutScreen extends StatelessWidget {
                   child: Text("Right",
                     style: TextStyle(
                         color:Colors.white,
-                        fontSize: 20.0
+                        fontSize: 20,
                     ),
                   ),
                 ),
