@@ -1,4 +1,6 @@
+
 import 'package:flutter/material.dart';
+import 'package:layout/background_image_screen.dart' show BackgroundImageScreen;
 import 'package:layout/simple_row_column_layout_screen.dart';
 import 'package:layout/stack_expanded_flexible_layout_screen.dart';
 
@@ -20,12 +22,12 @@ class NavigationScreen extends StatelessWidget {
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.blue,
               ),
-                onPressed: (){
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => StackExpandedFlexibleLayoutScreen()));
-                },
-                child: Text("Open Layout 1",style: TextStyle(color: Colors.white),),
+              onPressed: (){
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => StackExpandedFlexibleLayoutScreen()));
+              },
+              child: Text("Open Layout 1",style: TextStyle(color: Colors.white),),
             ),
             ElevatedButton(
               style: ElevatedButton.styleFrom(
@@ -38,6 +40,18 @@ class NavigationScreen extends StatelessWidget {
               },
               child: Text("Open Layout 2",style: TextStyle(color: Colors.white),),
             ),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.cyan,
+              ),
+              onPressed: (){
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => BackgroundImageScreen()));
+              },
+              child: Text("Open Background Image Screen",style: TextStyle(color: Colors.white),),
+            ),
+
           ],
         ),
       ),
