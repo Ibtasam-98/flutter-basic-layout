@@ -4,15 +4,16 @@ A Flutter project demonstrating fundamental layout widgets.
 
 ## About This Repository
 
-This repository, located at https://github.com/Ibtasam-98/flutter_layout.git, serves as a growing collection of basic Flutter layout examples. Currently, it provides clear and concise demonstrations of the following core layout widgets:
+This repository located at https://github.com/Ibtasam-98/flutter_layout.git, serves as a growing collection of basic of Flutter. Currently, it provides demonstrations of the following core layout widgets:
 
 - **Row:** Arranging widgets horizontally.
 - **Column:** Arranging widgets vertically.
 - **Stack:** Layering widgets on top of each other.
+- **Container:**  How to use container.
+- **Button:** How to add buttons in flutter
 
-Over time, this repository will be updated with code examples for more Flutter layout widgets (such as `Expanded`, `Flexible`, `Align`, `Center`, `Padding`, `GridView`, `ListView`, and more) as new tutorials are created. Check back periodically for updates and expanded coverage of Flutter's UI building blocks!
+Over time this repository will be updated with code examples for more Flutter widgets (such as `Expanded`, `Flexible`, `Align`, `Center`, `Padding`, `GridView`, `ListView`, and more) as new tutorials are created. Check back periodically for updates and expanded coverage of Flutter's UI building blocks!
 
-This resource is intended to provide a foundational understanding of Flutter's layout system and is a great starting point for developers of all levels.
 
 ## Getting Started
 
