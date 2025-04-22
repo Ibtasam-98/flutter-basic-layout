@@ -8,7 +8,19 @@ class GradientBackgroundScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color(0xffFFD194),
+          flexibleSpace: Container(
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                // use can set position of gradient
+                begin: Alignment.center,
+                end: Alignment.centerLeft,
+                colors:[
+                  Color(0xffD1913C),
+                  Color(0xffFFD194),
+                ],
+              ),
+            ),
+          ),
         title: Text(
             "Gradient Background",
           style: GoogleFonts.quicksand(
@@ -17,6 +29,7 @@ class GradientBackgroundScreen extends StatelessWidget {
           ),
         ),
         centerTitle: false,
+        leading: Icon(Icons.arrow_back,size: 20,),
       ),
       body: Container(
         decoration: BoxDecoration(
@@ -35,7 +48,7 @@ class GradientBackgroundScreen extends StatelessWidget {
             "Gradient Body",
             style: GoogleFonts.quicksand(
               fontSize: 18,
-              color: Colors.white
+              color: Colors.black
             ),
           ),
         ),
