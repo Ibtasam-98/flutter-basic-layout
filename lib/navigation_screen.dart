@@ -5,6 +5,7 @@ import 'package:layout/simple_row_column_layout_screen.dart';
 import 'package:layout/stack_expanded_flexible_layout_screen.dart';
 
 import 'gradient_background_screen.dart';
+import 'image_screen.dart';
 
 class NavigationScreen extends StatelessWidget {
   const NavigationScreen({super.key});
@@ -64,6 +65,18 @@ class NavigationScreen extends StatelessWidget {
                     MaterialPageRoute(builder: (context) => GradientBackgroundScreen()));
               },
               child: Text("Open Screen with Gradient",style: TextStyle(color: Colors.black),),
+            ),
+
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.lightGreen,
+              ),
+              onPressed: (){
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => ImageScreen()));
+              },
+              child: Text("Open Asset Screen",style: TextStyle(color: Colors.white),),
             ),
 
           ],

@@ -29,7 +29,12 @@ class GradientBackgroundScreen extends StatelessWidget {
           ),
         ),
         centerTitle: false,
-        leading: Icon(Icons.arrow_back,size: 20,),
+        leading: InkWell(
+          onTap: (){
+            Navigator.pop(context);
+          },
+          child: Icon(Icons.arrow_back,color: Colors.black,size: 20,),
+        ),
       ),
       body: Container(
         decoration: BoxDecoration(
