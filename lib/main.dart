@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:layout/simple_row_column_layout_screen.dart';
-import 'package:layout/stack_expanded_flexible_layout_screen.dart';
+import 'package:layout/views/simple_row_column_layout_screen.dart';
 
-import 'navigation_screen.dart';
+import 'views/navigation_screen.dart';
 
 void main (){
   runApp(MyApp());
