@@ -15,8 +15,8 @@ class NavigationScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blue,
-        title: Text("Navigation"),
+        backgroundColor: Colors.teal,
+        title: Text("Navigation",style: TextStyle(color: Colors.white),),
       ),
       body: Center(
         child: Column(
@@ -47,7 +47,12 @@ class NavigationScreen extends StatelessWidget {
               buttonHeight: 45,
                 buttonWidth: MediaQuery.of(context).size.width - 20,
                 buttonTitle: "Open Layout 2",
-                buttonBackgroundColor: Colors.blue,
+              gradient: LinearGradient(
+                  colors: [
+                    Color(0xffff6e7f),
+                    Color(0xffbfe9ff)
+                  ]
+              ),
                 onPressed:(){
                   Navigator.push(
                       context,
@@ -77,8 +82,8 @@ class NavigationScreen extends StatelessWidget {
               gradientBegin: Alignment.topCenter,
               gradient: LinearGradient(
                   colors: [
-                    Colors.red,
-                    Colors.deepOrangeAccent,
+                    Color(0xff1488CC),
+                    Color(0xff2B32B2)
                   ]
               ),
               onPressed:(){
