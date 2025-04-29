@@ -125,8 +125,8 @@ class StackExpandedFlexibleLayoutScreen extends StatelessWidget {
               gradientBegin: Alignment.bottomCenter,
               gradient: LinearGradient(
                   colors: [
-                    Colors.orangeAccent,
-                    Colors.red,
+                    Colors.blue,
+                    Colors.indigo,
                   ]
               ),
               onPressed:(){

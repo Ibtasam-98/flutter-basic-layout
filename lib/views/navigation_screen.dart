@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:layout/controllers/home_bottom_navigation_controller.dart';
 import 'package:layout/views/simple_row_column_layout_screen.dart';
@@ -23,6 +24,11 @@ class NavigationScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.teal,
+        title: Text("Bottom Nav",style: GoogleFonts.quicksand(color: Colors.white,fontSize: 18),),
+      ),
+      backgroundColor: Colors.white,
 
       body: Obx(() => _widgetOptions.elementAt(controller.selectedIndex.value)),
       bottomNavigationBar: Container(
