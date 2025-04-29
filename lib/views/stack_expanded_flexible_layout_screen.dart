@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:layout/views/simple_row_column_layout_screen.dart';
+
+import '../widgets/custom_button.dart';
 
 class StackExpandedFlexibleLayoutScreen extends StatelessWidget {
   const StackExpandedFlexibleLayoutScreen({super.key});
@@ -114,16 +117,24 @@ class StackExpandedFlexibleLayoutScreen extends StatelessWidget {
           //5. Another aligned Widget - top right
           Align(
             alignment: Alignment.center,
-            child: Container(
-              padding: const EdgeInsets.all(8.0),
-              decoration: BoxDecoration(
-                color: Colors.purple[200],
-                borderRadius: BorderRadius.circular(8.0)
+            child:  CustomButton(
+              buttonHeight: 45,
+              buttonWidth: MediaQuery.of(context).size.width - 20,
+              buttonTitle: "Open Layout 1",
+              gradientEnd: Alignment.topCenter,
+              gradientBegin: Alignment.bottomCenter,
+              gradient: LinearGradient(
+                  colors: [
+                    Colors.orangeAccent,
+                    Colors.red,
+                  ]
               ),
-              child: Text(
-                  "Aligned Top Right",
-                style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),
-              ),
+              onPressed:(){
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => SimpleRowColumnLayoutScreen()));
+              } ,
+              borderRadius: BorderRadius.circular(45),
             ),
           )
 

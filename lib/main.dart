@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:layout/views/simple_row_column_layout_screen.dart';
+import 'package:get/get.dart';
 
 import 'views/navigation_screen.dart';
 
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       home: NavigationScreen(), // main entry point of application
     );
   }

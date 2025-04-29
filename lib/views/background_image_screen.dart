@@ -8,25 +8,7 @@ class BackgroundImageScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       extendBodyBehindAppBar: true,// Important for transparent Appbar
-      appBar: AppBar(
-        backgroundColor: Colors.transparent, // Make appbar Transparent
-        title: Text(
-          "Background Image",
-          style: GoogleFonts.quicksand(
-              color: Colors.white,
-              fontSize: 18
-          ),
-        ),
-        leading: InkWell(
-          onTap: (){
-            Navigator.pop(context);
-          },
-          child: Icon(
-            Icons.arrow_back_ios,
-            size: 20,
-            color: Colors.white,),
-        ),
-      ),
+
       body: Stack(
         children: [
           Container(
