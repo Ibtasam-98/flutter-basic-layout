@@ -25,11 +25,27 @@ class NavigationScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.teal,
-        title: Text("Bottom Nav",style: GoogleFonts.quicksand(color: Colors.white,fontSize: 18),),
+        backgroundColor: Colors.black,
+        title: Text(
+          "Gradient Appbar",
+          style: GoogleFonts.quicksand(
+              fontSize: 18,
+              color: Colors.white,
+          ),
+        ),
+        flexibleSpace: Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topLeft,
+              end: Alignment.topRight,
+              colors: [
+                Colors.orange,
+                Colors.red,
+              ]
+            )
+          ),
+        ),
       ),
-      backgroundColor: Colors.white,
-
       body: Obx(() => _widgetOptions.elementAt(controller.selectedIndex.value)),
       bottomNavigationBar: Container(
         decoration:  BoxDecoration(
