@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:layout/views/simple_row_column_layout_screen.dart';
 
+import '../widgets/custom_appbar.dart';
 import '../widgets/custom_button.dart';
 
 class StackExpandedFlexibleLayoutScreen extends StatelessWidget {
@@ -9,9 +10,15 @@ class StackExpandedFlexibleLayoutScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.blue,
-        title: Text("Combined Layout",style: TextStyle(color: Colors.white),),
+      // appBar: AppBar(
+      //   backgroundColor: Colors.blue,
+      //   title: Text("Combined Layout",style: TextStyle(color: Colors.white),),
+      // ),
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(45),
+        child: CustomAppbar(
+          appBarTitle: "Combined Layout",
+        ),
       ),
       body: Stack(
         children: [

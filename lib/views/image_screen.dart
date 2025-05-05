@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../widgets/custom_appbar.dart';
+
 class ImageScreen extends StatelessWidget {
   const ImageScreen({super.key});
 

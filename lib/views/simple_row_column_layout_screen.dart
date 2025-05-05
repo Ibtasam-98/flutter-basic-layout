@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+
+import '../widgets/custom_appbar.dart';
 
 class SimpleRowColumnLayoutScreen extends StatelessWidget {
   const SimpleRowColumnLayoutScreen({super.key});
@@ -8,9 +11,11 @@ class SimpleRowColumnLayoutScreen extends StatelessWidget {
     final screenHeight = MediaQuery.of(context).size.height;
 
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.blue,
-        title: Text("Layout 1"),
+      appBar: PreferredSize(
+          preferredSize: Size.fromHeight(45),
+          child: CustomAppbar(
+            appBarTitle: "Layout 1",
+          ),
       ),
       body: SingleChildScrollView(
         child: Column(
