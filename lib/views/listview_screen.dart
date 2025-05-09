@@ -12,7 +12,7 @@ class ListviewScreen extends StatelessWidget {
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(45),
         child: CustomAppbar(
-          appBarTitle: "Flutter Listview",
+          appBarTitle: "Listview",
         ),
       ),
       body: Padding(
