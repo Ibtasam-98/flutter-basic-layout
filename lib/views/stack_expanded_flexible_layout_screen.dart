@@ -3,6 +3,7 @@ import 'package:layout/views/simple_row_column_layout_screen.dart';
 
 import '../widgets/custom_appbar.dart';
 import '../widgets/custom_button.dart';
+import 'listview_screen.dart';
 
 class StackExpandedFlexibleLayoutScreen extends StatelessWidget {
   const StackExpandedFlexibleLayoutScreen({super.key});
@@ -124,26 +125,52 @@ class StackExpandedFlexibleLayoutScreen extends StatelessWidget {
           //5. Another aligned Widget - top right
           Align(
             alignment: Alignment.center,
-            child:  CustomButton(
-              buttonHeight: 45,
-              buttonWidth: MediaQuery.of(context).size.width - 20,
-              buttonTitle: "Open Layout 1",
-              gradientEnd: Alignment.topCenter,
-              gradientBegin: Alignment.bottomCenter,
-              gradient: LinearGradient(
-                  colors: [
-                    Colors.blue,
-                    Colors.indigo,
-                  ]
-              ),
-              onPressed:(){
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => SimpleRowColumnLayoutScreen()));
-              } ,
-              borderRadius: BorderRadius.circular(45),
-            ),
-          )
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                CustomButton(
+                  buttonHeight: 45,
+                  buttonWidth: MediaQuery.of(context).size.width - 20,
+                  buttonTitle: "Open Layout 1",
+                  gradientEnd: Alignment.topCenter,
+                  gradientBegin: Alignment.bottomCenter,
+                  gradient: LinearGradient(
+                      colors: [
+                        Colors.blue,
+                        Colors.indigo,
+                      ]
+                  ),
+                  onPressed:(){
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => SimpleRowColumnLayoutScreen()));
+                  } ,
+                  borderRadius: BorderRadius.circular(45),
+                ),
+                SizedBox(height: 10,),
+                CustomButton(
+                  buttonHeight: 45,
+                  buttonWidth: MediaQuery.of(context).size.width - 20,
+                  buttonTitle: "Open Listview Screen",
+                  gradientEnd: Alignment.topCenter,
+                  gradientBegin: Alignment.bottomCenter,
+                  gradient: LinearGradient(
+                      colors: [
+                        Colors.orange,
+                        Colors.red,
+                      ]
+                  ),
+                  onPressed:(){
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => ListviewScreen()));
+                  } ,
+                  borderRadius: BorderRadius.circular(45),
+                ),
+              ],
+            )
+          ),
+
 
         ],
       ),
