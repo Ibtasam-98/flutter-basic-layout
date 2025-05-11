@@ -9,7 +9,7 @@ This repository currently provides practical examples and demonstrations of the 
     - **Container:** Utilizing the `Container` widget for applying padding, margin, background color, borders, and other styling properties, as well as basic sizing constraints.
 - **Interactive Elements:**
     - **Button:** Demonstrations of various button types in Flutter, including basic `ElevatedButton`, applying gradient backgrounds to buttons, and creating reusable stateless button components.
-    - **BottomNavigationBar & Google Navigation Bar:** Implementing bottom navigation patterns for easy screen switching, showcasing both the standard `BottomNavigationBar` and the modern `NavigationBar` from Google.
+    - **BottomNavigationBar & Google Navigation Bar:** Implementing bottom navigation patterns for easy screen switching, showcasing both the standard `BottomNavigationBar` and the modern `NavigationBar'.
 - **Visual Enhancements:**
     - **Backgrounds:** Examples of setting solid color backgrounds for screens.
     - **Gradient Backgrounds:** Implementing visually appealing linear gradient backgrounds for entire screens or specific widgets.
